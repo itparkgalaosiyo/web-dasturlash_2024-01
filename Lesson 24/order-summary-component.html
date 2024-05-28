@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order summary component | Frontend Mentor</title>
+  <style>
+    body {
+      background-color: #D6E1FF;
+      font-family: sans-serif;
+      display: grid;
+      min-height: 100vh;
+      place-items: center;
+    }
+
+    article {
+      background-color: white;
+      width: 350px;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .surat {
+      width: 100%;
+      height: 150px;
+      background-color: #382ae1;
+    }
+
+    section {
+      padding: 24px;
+    }
+
+    h1 {
+      margin: 0;
+      text-align: center;
+    }
+
+    .ikki-chetda {
+      background-color: #f8f9fe;
+      border-radius: 8px;
+      padding-inline: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .yonma-yon {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .musiqa {
+      width: 35px;
+      height: 35px;
+      background-color: #dfe6fa;
+      border-radius: 50%;
+
+      /* markazga olish uchun */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    button {
+      background-color: #382ae1;
+      color: white;
+      border-radius: 8px;
+      border: none;
+      width: 100%;
+      padding-block: 12px;
+      font-weight: bold;
+    }
+
+    .maxsus-link {
+      color: gray;
+      text-decoration: none;
+      text-align: center;
+      font-weight: bold;
+      display: block;
+      margin-top: 16px;
+    }
+  </style>
+</head>
+<body>
+  <article>
+    <div class="surat"></div>
+    <section>
+      <h1>Order Summary</h1>
+      <p style="text-align: center;">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+      <div class="ikki-chetda">
+	<div class="yonma-yon">
+	  <div class="musiqa">🎵</div>
+	  <p><b>Annual plan</b> <br> $59.99/year </p>
+	</div>
+	<a href="#">Change</a>
+      </div>
+      <br>
+      <button>Proceed to Payment</button>
+      <a href="#" class="maxsus-link">Cancel Order</a>
+    </section>
+  </article>
+</body>
+</html>
+

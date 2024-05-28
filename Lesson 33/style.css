@@ -1,0 +1,66 @@
+body {
+  background-color: #131519;
+  color: white;
+  font-family: monospace;
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+}
+
+article {
+  background-color: #212932;
+  width: 300px;
+  padding: 32px;
+  border-radius: 16px;
+}
+
+.yulduz {
+  background-color: #262e3b;
+  width: fit-content;
+  border-radius: 50%;
+  padding: 8px;
+  line-height: 1.35;
+}
+
+p {
+  color: darkgray;
+}
+
+input {
+  display: none;
+}
+
+label {
+  background-color: #262e3b;
+
+  /* shaklni yaratish uchun */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  /* markazga olish uchun */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.baholar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #f97716;
+  border-radius: 100vw;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  cursor: pointer;
+}
+
+input:checked + label {
+  background-color: white;
+  color: black;
+}

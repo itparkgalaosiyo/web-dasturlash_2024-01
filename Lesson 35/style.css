@@ -1,0 +1,40 @@
+body {
+  background-color: #1c0742;
+  color: white;
+  font-family: cursive;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.yonida {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.menu {
+  width: 50px;
+  height: 50px;
+
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1;
+
+  background-image: linear-gradient(#f874fe, #9c86f8);
+  color: white;
+
+  border: 0;
+  border-radius: 50%;
+}
+
+.javoblar > span {
+  display: inline-block;
+  width: 50px;
+  height: 70px;
+  border-radius: 16px;
+  background-color: rgb(255, 255, 255, 0.1);
+}

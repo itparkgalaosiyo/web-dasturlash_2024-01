@@ -1,0 +1,18 @@
+Web Dasturlash
+- HTML - Hyper Text Markup Language
+- CSS - Cascading Style Sheet
+- JS - JavaScript
+
+
+h1 - Heading 1 = Sarlavha 1 (Eng katta)
+h2 - Heading 2 = Sarlavha 2
+.....
+h6 - Heading 6 = Sarlavha 6 (Eng kichik)
+
+<br> - Break
+
+<ul> - Unordered list (nuqtali)
+<ol> - Ordered list (raqamli)
+
+superscript - tepagdagi son
+subscript - pastdagi son

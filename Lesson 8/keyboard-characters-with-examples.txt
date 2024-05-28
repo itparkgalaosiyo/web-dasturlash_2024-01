@@ -1,0 +1,54 @@
+! - if (!isTrue) { /* do something */ }
+@ - div @class { /* styles */ }
+# - <div id="myDiv">Content</div>
+$ - $('#myElement').hide();
+% - width: 50%;
+^ - result = 2^3; // 8
+& - <div class="class1 class2">Content</div>
+* - result = 2 * 3; // 6
+( and ) - (2 + 3) * 4
+- - result = 5 - 3; // 2
+_ - my_variable_name
+= - let x = 10;
++ - result = 2 + 3; // 5
+` - let message = `Hello, ${name}!`;
+~ - div ~ p { /* styles */ }
+[ and ] - input[type="text"] { /* styles */ }
+{ and } - { color: blue; }
+\ - let myString = 'This is a backslash: \\'
+/ - src="/images/my-image.jpg"
+; - let x = 5;
+: - color: #333;
+' - let text = 'Hello';
+" - let message = "Welcome!";
+, - margin: 5px, 10px, 15px;
+. - object.property or .myClass
+< and > - <div>Content</div>
+? - let result = (condition) ? 'Yes' : 'No';
+| - let result = 5 | 3; // 7
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+</body>
+</html>
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    alert('Page loaded!');
+});

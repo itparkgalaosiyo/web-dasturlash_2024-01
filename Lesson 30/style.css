@@ -1,0 +1,50 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: monospace;
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+}
+
+section {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  width: 700px;
+}
+
+article {
+  width: 200px;
+  border-radius: 8px;
+  padding-top: 30px;
+}
+
+.malumot {
+  background-color: darkblue;
+  border-radius: 8px;
+  padding: 8px 16px;
+}
+
+.ikki-chetda {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.katta-text {
+  font-size: 48px;
+  margin-block: 8px;
+}
+
+button {
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+
+
+
+
+
+

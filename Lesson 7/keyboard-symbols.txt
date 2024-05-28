@@ -1,0 +1,59 @@
+! - Exclamation
+@ - At
+# - Hash
+$ - Dollar
+% - Percent
+^ - Caret
+& - Ampersand
+* - Asterisk (yoki) star
+( - Left parenthesis
+) - Right parenthesis
+- - Hypen (yoki) minus
+_ - Underscore
+= - Equals
++ - Plus
+` - Backtick
+~ - Tilde
+[ - Left square bracket
+] - Right square bracket
+{ - Left curly brace
+} - Right curly brace
+; - Semicolon
+: - Colon
+' - Single quotation
+" - Double quotation
+\ - Backslash
+/ - Forward slash
+| - Pipe
+, - Comma
+. - Dot (yoki) period
+< - Less than
+> - Greater than
+? - Question mark
+  - Space
+
+
+
+
+www.google.com
+myname@gmail.com
+
+<html></html>
+<img src="mustang.jpg" alt="Mustang mashinasi">
+
+
+body {
+  background-color: blue;
+  color: #fff;
+  font-size: 18px;
+}
+
+
+const button = document.querySelector(".button");
+
+button.addEventListener("click", (e) => {
+  e.preventDefault();
+  console.log(e.target);
+});
+
+

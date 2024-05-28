@@ -1,0 +1,49 @@
+body {
+  background-color: #37384E;
+}
+
+article {
+  background-color: white;
+  width: 600px;
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+  padding: 24px;
+  border-radius: 24px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-block: 20px;
+}
+
+.surat {
+  width: 45%;
+  background-color: #FE5B65;
+  flex-shrink: 0;
+  border-radius: 16px;
+}
+
+input {
+  padding: 12px 16px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-block: 4px 16px;
+  border: 1px solid #333;	
+}
+
+button {
+  background-color: #222;
+  color: white;
+  padding: 16px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  width: 100%;
+}
+
+
+
+
+

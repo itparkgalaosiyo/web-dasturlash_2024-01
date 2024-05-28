@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NFT preview card | Frontend Mentor</title>
+  <style>
+    body {
+      background-color: rgb(10, 10, 50);
+      color: lightgray;
+      font-family: sans-serif;
+      display: grid;
+      min-height: 100vh;
+      place-items: center;
+    }
+
+    article {
+      background-color: rgb(15, 15, 70);
+      width: 300px;
+      padding: 24px;
+      border-radius: 16px;
+      border-right: 4px solid cyan;
+      border-bottom: 4px solid cyan;
+    }
+
+    .surat {
+      width: 100%;
+      height: 300px;
+      background-image: linear-gradient(130deg, purple, red);
+      border-radius: 12px;
+    }
+
+    .ikki-chetda {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .yonma-yon {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .avatar {
+      width: 30px;
+      height: 30px;
+      background-color: teal;
+      border-radius: 50%;
+      border: 1px solid white;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <article>
+    <div class="surat"></div>
+    <h1 style="color: white;">Equilibrium #3429</h1>
+    <p>Our Equilibrium collection promotes balance and calm.</p>
+    <div class="ikki-chetda">
+      <p>💎 <b style="color: cyan;">0.041 ETH</b></p>
+      <p>🕒 3 days left</p>
+    </div>
+    <hr style="border: 1px solid #555;">
+    <div class="yonma-yon">
+      <div class="avatar"></div>
+      <p>Creation of <a href="#">Jules Wyvern</a></p>
+    </div>
+  </article>
+</body>
+</html>
+

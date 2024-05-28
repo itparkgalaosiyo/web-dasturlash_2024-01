@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML darsi</title>
+  </head>
+  <body>
+    <h1>HTMLdan qo'shimcha darslar</h1>
+    <h2>Select mavzusi</h2>
+    <label for="kompyuterlar">Kompyuteringizni tanlang: </label>
+    <select id="kompyuterlar">
+      <option>HP</option>
+      <option>Asus</option>
+      <option>Apple</option>
+      <option>Acer</option>
+      <option>LG</option>
+      <option>Boshqa</option>
+    </select>
+
+    <h2>Datalist mavzusi</h2>
+    <label for="browser">Browseringizni tanlang: </label>
+    <input list="browserlar" id="browser">
+
+    <datalist id="browserlar">
+      <option value="Chrome">
+      <option value="Firefox">
+      <option value="Opera">
+      <option value="Safari">
+      <option value="Edge">
+      <option value="Brave">
+    </datalist>
+
+    <h2>Placeholder mavzusi</h2>
+    <label>Placeholder ishlatilmagan: </label>
+    <input type="text">
+    <br><br>
+    <label>Placeholder ishlatilgan: </label>
+    <input type="text" placeholder="Salom">
+
+    <h2>Disabled va checked mavzusi</h2>
+    <input type="checkbox" id="olma">
+    <label for="olma">Olma</label>
+    <br>
+    <input type="checkbox" id="nok" checked>
+    <label for="nok">Nok</label>
+    <br>
+    <input type="checkbox" id="anor" disabled>
+    <label for="anor">Anor</label>
+    <br>
+    <input type="checkbox" id="banan" checked disabled>
+    <label for="banan">Banan</label>
+
+    <h2>Min va max mavzusi</h2>
+    <form>
+      <label>Yoshingizni kiriting: </label>
+      <input type="number" min="0">
+
+      <br><br>
+
+      <label>Telefon quvvatingizni yozing: </label>
+      <input type="number" min="0" max="100">
+
+      <br><br>
+     
+      <button>Jo'natish</button>
+    </form>
+
+    <h2>Minlength va maxlength mavzusi</h2>
+    
+    <form>
+      <label>Maxfiy kodni kiriting: </label>
+      <input type="text" minlength="8" maxlength="16">
+
+      <br><br>
+
+      <button>Jo'natish</button>
+    </form>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+<!--
+select
+datalist
+placeholder
+disabled
+form
+min
+max
+minlength
+maxlength
+-->

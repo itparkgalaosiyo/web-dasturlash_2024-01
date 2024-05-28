@@ -1,0 +1,56 @@
+body {
+  font-family: sans-serif;
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+}
+
+section {
+  display: flex;
+  width: 750px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Article uchun */
+article {
+  color: white;
+  padding: 24px;
+}
+
+.sedans {
+  background-color: #E38525;
+}
+
+.suvs {
+  background-color: #016871;
+}
+
+.luxury {
+  background-color: #003F3E;
+}
+
+/* Button uchun */
+button {
+  background-color: white;
+  border: none;
+  border-radius: 100vw;
+  padding: 12px 32px;
+  margin-top: 40px;
+}
+
+.sedans-btn {
+  color: #E38525;
+}
+
+.suvs-btn {
+  color: #016871;
+}
+
+.luxury-btn {
+  color: #003F3E;
+}
+
+
+
+

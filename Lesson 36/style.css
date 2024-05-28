@@ -1,0 +1,94 @@
+body {
+  background-color: #181468;
+  color: white;
+  font-family: cursive;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+  margin-inline: auto;
+}
+
+.yonida {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.menu {
+  width: 50px;
+  height: 50px;
+
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1;
+
+  background-image: linear-gradient(#f874fe, #9c86f8);
+  color: white;
+
+  border: 0;
+  border-radius: 50%;
+}
+
+.javoblar div {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-block: 16px;
+}
+
+.javoblar span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 70px;
+  height: 90px;
+
+  border-radius: 16px;
+  background-color: #1e369a;
+
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.javoblar span.active {
+  background-color: #2463ff;
+}
+
+.harflar {
+  margin-top: 50px;
+}
+
+.harflar div {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-block: 16px;
+}
+
+.harflar button {
+  width: 70px;
+  height: 55px;
+
+  border: 0;
+  border-radius: 8px;
+  background-color: white;
+  color: #181468;
+
+  font-family: cursive;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.harflar button.tanlangan {
+  opacity: 0.2;
+}
+
+meter {
+  width: 200px;
+  height: 30px;
+}

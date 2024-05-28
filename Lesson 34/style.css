@@ -1,0 +1,108 @@
+body {
+  background-color: #f8eadc;
+  font-family: sans-serif;
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
+  gap: 32px;
+}
+
+header {
+  background-color: #ec755e;
+  color: white;
+  width: 500px;
+  border-radius: 20px;
+  padding: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nuqtalar {
+  font-size: 32px;
+}
+
+h1 {
+  font-size: 16px;
+  margin-block: 0;
+  font-weight: normal;
+}
+
+.balance {
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+article {
+  background-color: white;
+  width: 500px;
+  border-radius: 20px;
+  padding: 32px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+li > div {
+  width: 50px;
+  background-color: #ec755e;
+  border-radius: 6px;
+}
+
+li > p {
+  text-align: center;
+}
+
+.mon {
+  height: 50px;
+}
+
+.tue {
+  height: 100px;
+}
+
+.wed {
+  height: 150px;
+  background-color: teal;
+}
+
+.thu {
+  height: 90px;
+}
+
+.fri {
+  height: 70px;
+}
+
+.sat {
+  height: 120px;
+}
+
+.sun {
+  height: 80px;
+}
+
+.ikki-chetda {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.ikki-chetda > p {
+  margin-bottom: 0;
+}
+
+.total {
+  font-size: 40px;
+}
