@@ -1,0 +1,46 @@
+body {
+  background-color: #111016;
+  color: white;
+  font-family: monospace;
+
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
+  gap: 16px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 18px;
+  margin-block: 0;
+  color: gray;
+}
+
+.container {
+  background-color: #24232b;
+  padding: 24px;
+  width: 300px;
+}
+
+.natija {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.natija p {
+  margin-block: 0;
+  font-size: 24px;
+  color: gray;
+}
+
+.natija button {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.natija button:active {
+  scale: 0.9;
+}
