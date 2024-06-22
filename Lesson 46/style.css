@@ -1,0 +1,139 @@
+body {
+  background-color: #111016;
+  color: white;
+  font-family: monospace;
+
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
+  gap: 16px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 18px;
+  margin-block: 0;
+  color: gray;
+}
+
+.container {
+  background-color: #24232b;
+  padding: 24px;
+  width: 300px;
+}
+
+.natija {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.natija p {
+  margin-block: 0;
+  font-size: 24px;
+  color: gray;
+}
+
+.natija button {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.natija button:active {
+  scale: 0.9;
+}
+
+.ikki-chetda {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.length {
+  color: #acfbb6;
+  font-size: 24px;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin-block: 16px;
+  accent-color: #acfbb6;
+}
+
+input[type="checkbox"] {
+  width: 17px;
+  height: 17px;
+  accent-color: #acfbb6;
+  color-scheme: dark;
+}
+
+/* checkbox bor div ni tanlash */
+div:has(input[type="checkbox"]) {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.strength {
+  background-color: #18171f;
+  padding: 18px 24px;
+  margin-block: 16px;
+}
+
+.strength p {
+  color: gray;
+  font-size: 18px;
+  margin-block: 0;
+}
+
+.strength div {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.daraja {
+  font-size: 18px;
+  margin-right: 6px;
+}
+
+.xavfsizlik {
+  border: 2px solid white;
+  width: 8px;
+  height: 20px;
+  display: block;
+}
+
+div:has(.xavfsizlik:nth-of-type(1).active) > .active {
+  border-color:#f86666;
+  background-color:#f86666;
+}
+
+div:has(.xavfsizlik:nth-of-type(2).active) > .active {
+  border-color:  #f88d66;
+  background-color: #f88d66;
+}
+
+div:has(.xavfsizlik:nth-of-type(3).active) > .active {
+  border-color: #f8cd66;
+  background-color:  #f8cd66;
+}
+
+div:has(.xavfsizlik:nth-of-type(4).active) > .active {
+  border-color: #6df866;
+  background-color: #6df866;
+}
+
+.generate {
+  background-color: #acfbb6;
+  padding: 16px;
+  width: 100%;
+  border: 0;
+  text-transform: uppercase;
+  font-family: monospace;
+  font-weight: 600;
+}
