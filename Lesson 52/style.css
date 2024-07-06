@@ -1,0 +1,50 @@
+:root {
+  --sabzirang: #f06717;
+  --kulrang: #e7eff2;
+  --kichik-radius: 8px;
+  --katta-radius: 20px;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+header, 
+section,
+footer {
+  width: min(100% - 16px, 1000px);
+  margin-inline: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 24px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+
+  background-color: var(--sabzirang);
+  color: white;
+  
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn {
+  padding: 16px 28px;
+  border: 0;
+  border-radius: var(--kichik-radius);
+  background-color: var(--kulrang);
+  
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.btn:active {
+  scale: 0.9;
+}
