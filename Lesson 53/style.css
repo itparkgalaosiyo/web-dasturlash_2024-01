@@ -1,0 +1,121 @@
+:root {
+  --sabzirang: #f06717;
+  --kulrang: #e7eff2;
+  --kichik-radius: 8px;
+  --katta-radius: 20px;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+img {
+  width: 100%;
+  display: block;
+  border-radius: var(--katta-radius);
+}
+
+header,
+section,
+footer {
+  width: min(100% - 16px, 900px);
+  margin-inline: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 24px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+
+  background-color: var(--sabzirang);
+  color: white;
+
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn {
+  padding: 16px 28px;
+  border: 0;
+  border-radius: var(--kichik-radius);
+  background-color: var(--kulrang);
+
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.btn.asosiy {
+  background-color: var(--sabzirang);
+  color: white;
+}
+
+.btn:active {
+  scale: 0.9;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  margin-block: 32px;
+}
+
+.about > div:first-child {
+  display: grid;
+  gap: 16px;
+  align-self: center;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.yonma-yon {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.about > div:last-child img {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* suratni kvadrat qilish */
+  object-fit: cover; /* suratni o'z holiga olib kelish */
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 2fr 3fr 3fr;
+  gap: 16px;
+}
+
+.info > div:nth-child(1) img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.info > div:nth-child(2) img {
+  width: 100%;
+  aspect-ratio: 14 / 16;
+  object-fit: cover;
+}
+
+.info > div:nth-child(3) {
+  align-self: center;
+  padding-left: 100px;
+}
+
+h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
