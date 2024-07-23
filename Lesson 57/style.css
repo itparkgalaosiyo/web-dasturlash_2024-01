@@ -1,0 +1,84 @@
+header {
+  background-color: red;
+  height: 50px;
+}
+
+/* Televizorda ko'ringanda */
+@media (width > 2000px) {
+  header {
+    background-color: orange;
+  }
+}
+
+/* Planshetda ko'ringanda */
+@media (width < 900px) {
+  header {
+    background-color: blue;
+  }
+}
+
+/* Telefonda ko'ringanda */
+@media (width < 400px) {
+  header {
+    background-color: green;
+  }
+}
+
+ul {
+  display: flex;
+  gap: 32px;
+}
+
+/* Telefonda ko'ringanda */
+@media (width < 400px) {
+  ul {
+    flex-direction: column;
+  }
+}
+
+/* ANIMATIONS */
+.aylana {
+  border-radius: 50%;
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  animation: harakat 3s infinite alternate linear;
+}
+
+@keyframes harakat {
+  to {
+    /* 500px o'ng tarafga yurish */
+    transform: translateX(500px);
+
+    /* kvadrat qilish uchun */
+    border-radius: 0;
+
+    background-color: red;
+  }
+}
+
+/* 
+  infinite - cheksiz davom etish
+  alternate - borib qaytib kelish
+  linear - bir xil tezlikda
+*/
+
+:root {
+  --yugurish: 200ms;
+  --qurqish: 150ms;
+  --imtihon: 100ms;
+  --qizcha: 50ms;
+}
+
+.yurak {
+  width: fit-content;
+  margin-inline: auto;
+  font-size: 100px;
+  animation: yurakcha var(--yugurish) infinite alternate;
+}
+
+@keyframes yurakcha {
+  to {
+    scale: 1.3;
+  }
+}
