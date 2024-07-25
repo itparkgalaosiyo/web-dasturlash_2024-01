@@ -1,0 +1,68 @@
+:root {
+  --rang-yashil: #62e5ab;
+  --rang-qora: #151515;
+  --rang-kulrang: #242424;
+}
+
+body {
+  background-color: var(--rang-qora);
+  color: white;
+
+  /* google dan font olib qo'yish */
+  font-family: sans-serif;
+}
+
+p {
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header,
+section,
+footer,
+hr {
+  width: min(100% - 16px, 1000px);
+  margin-inline: auto;
+}
+
+.ikki-chetda {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.linklar {
+  display: flex;
+  gap: 16px;
+  list-style-type: none;
+}
+
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-color: var(--rang-yashil);
+}
+
+.haqimda {
+
+}
+
+.haqimda p {
+  font-size: 20px;
+
+  /* kichiklashtirish uchun */
+  max-width: 50ch;
+}
+
+h1 {
+  font-size: 70px;
+}
