@@ -1,0 +1,165 @@
+:root {
+  --rang-yashil: #62e5ab;
+  --rang-qora: #151515;
+  --rang-kulrang: #242424;
+  --gradient: linear-gradient(45deg, cyan, teal);
+}
+
+body {
+  background-color: var(--rang-qora);
+  color: white;
+
+  /* google dan font olib qo'yish */
+  font-family: sans-serif;
+}
+
+p {
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header,
+section,
+footer,
+hr {
+  width: min(100% - 16px, 1000px);
+  margin-inline: auto;
+}
+
+.ikki-chetda {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.linklar {
+  display: flex;
+  gap: 16px;
+  list-style-type: none;
+}
+
+.ism {
+  /* gradient text uchun */
+  background-image: var(--gradient);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* pastdagi chiziq uchun */
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-color: var(--rang-yashil);
+}
+
+.haqimda p {
+  font-size: 20px;
+
+  /* kichiklashtirish uchun */
+  max-width: 50ch;
+}
+
+h1 {
+  font-size: 70px;
+}
+
+.link {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-color: var(--rang-yashil);
+  text-decoration-thickness: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+section {
+  margin-block: 50px;
+}
+
+.mahoratlar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+@media (width > 500px) {
+  .mahoratlar {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (width > 800px) {
+  .mahoratlar {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.mahoratlar h3 {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.loyihalar {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+@media (width > 600px) {
+  .loyihalar {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.loyihalar h3 {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.loyihalar ul {
+  list-style-type: none;
+  display: flex;
+  gap: 24px;
+  padding-left: 0;
+  text-transform: uppercase;
+}
+
+.murojaat {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+@media (width > 700px) {
+  .murojaat {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.murojaat h2 {
+  margin-block: 0;
+}
+
+.murojaat p {
+  max-width: 45ch;
+  margin-bottom: 24px;
+}
