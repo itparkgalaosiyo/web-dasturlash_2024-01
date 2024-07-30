@@ -5,12 +5,57 @@
   --gradient: linear-gradient(45deg, cyan, teal);
 }
 
+/* ================ 
+  Umumiy stillar
+================= */
 body {
   background-color: var(--rang-qora);
   color: white;
 
   /* google dan font olib qo'yish */
   font-family: sans-serif;
+}
+
+header,
+section,
+footer,
+hr {
+  width: min(100% - 16px, 1000px);
+  margin-inline: auto;
+}
+
+section {
+  margin-block: 50px;
+}
+
+hr {
+  border-color: var(--rang-yashil);
+}
+
+img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 70px;
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: 900;
+  margin-block: 20px;
+}
+
+@media (width < 550px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
 }
 
 p {
@@ -22,18 +67,28 @@ a {
   color: white;
 }
 
-header,
-section,
-footer,
-hr {
-  width: min(100% - 16px, 1000px);
-  margin-inline: auto;
-}
-
+/* ================ 
+  Qayta ishlatiladigan classlar
+================= */
 .ikki-chetda {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (width < 550px) {
+  .ikki-chetda {
+    flex-direction: column;
+  }
+}
+
+.link {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-color: var(--rang-yashil);
+  text-decoration-thickness: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .logo {
@@ -45,6 +100,17 @@ hr {
   display: flex;
   gap: 16px;
   list-style-type: none;
+  padding-left: 0;
+}
+
+/* ================ 
+  Haqimda
+================= */
+.haqimda p {
+  font-size: 20px;
+
+  /* kichiklashtirish uchun */
+  max-width: 50ch;
 }
 
 .ism {
@@ -57,32 +123,27 @@ hr {
   text-decoration: underline;
   text-underline-offset: 10px;
   text-decoration-color: var(--rang-yashil);
+  animation: text-animatsiya 2s infinite;
+  background-size: 400% 400%;
 }
 
-.haqimda p {
-  font-size: 20px;
+@keyframes text-animatsiya {
+  0% { 
+    background-position: 0 50%;
+  }
 
-  /* kichiklashtirish uchun */
-  max-width: 50ch;
+  50% { 
+    background-position: 100% 50%;
+  }
+
+  100% { 
+    background-position: 0 50%;
+  }
 }
 
-h1 {
-  font-size: 70px;
-}
-
-.link {
-  text-decoration: underline;
-  text-underline-offset: 10px;
-  text-decoration-color: var(--rang-yashil);
-  text-decoration-thickness: 2px;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-section {
-  margin-block: 50px;
-}
-
+/* ================ 
+  Mahoratlar
+================= */
 .mahoratlar {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -107,27 +168,20 @@ section {
   margin-bottom: 20px;
 }
 
-h2 {
-  font-size: 60px;
-  font-weight: 900;
-}
-
+/* ================ 
+  Loyihalar
+================= */
 .loyihalar {
   display: grid;
   grid-template-columns: 1fr;
   gap: 32px;
+  margin-top: 50px;
 }
 
 @media (width > 600px) {
   .loyihalar {
     grid-template-columns: 1fr 1fr;
   }
-}
-
-img {
-  width: 100%;
-  display: block;
-  border-radius: 10px;
 }
 
 .loyihalar h3 {
@@ -143,6 +197,9 @@ img {
   text-transform: uppercase;
 }
 
+/* ================ 
+  Murojaat
+================= */
 .murojaat {
   display: grid;
   grid-template-columns: 1fr;
